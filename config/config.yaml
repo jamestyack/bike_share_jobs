@@ -1,0 +1,58 @@
+station_field_maps:
+  babs:
+    container: stationBeanList
+    id: id
+    lat: latitude
+    lng: longitude
+    others:
+      name: stationName
+      lat: latitude
+      lng: longitude
+      addr: location
+      city: city
+      region: landMark
+  citibikenyc:
+    container: stationBeanList
+    id: id
+    lat: latitude
+    lng: longitude
+    others:
+      name: stationName
+      #addr: location
+      #city: city
+      #region: landMark
+  indego:
+    container: features
+    id: properties.kioskId
+    lat: geometry.coordinates.1
+    lng: geometry.coordinates.0
+    others:
+      name: properties.name
+      addr: properties.addressStreet
+      city: properties.addressCity
+
+snapshot_field_maps:
+  babs:
+    container: stationBeanList
+    id: id
+    others:
+      bikeAva: availableBikes
+      dockAva: availableDocks
+      dockTot: totalDocks
+      sts: statusValue
+  citybikenyc:
+    container: stationBeanList
+    id: id
+    others:
+      bikeAva: availableBikes
+      dockAva: availableDocks
+      dockTot: totalDocks
+      sts: statusValue
+  indego:
+    container: features
+    id: properties.kioskId
+    others:
+      bikeAva: properties.bikesAvailable
+      dockAva: properties.docksAvailable
+      dockTot: properties.totalDocks
+      sts: properties.kioskPublicStatus
