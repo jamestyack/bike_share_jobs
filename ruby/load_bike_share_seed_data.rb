@@ -11,7 +11,7 @@ Dotenv.load
 @bike_systems_coll = @client['bike_systems']
 @bike_systems_coll.find().delete_many
 
-systems = CSV.read("../bike_share_metadata/bike_systems.csv")
+systems = CSV.read("bike_share_metadata/bike_systems.csv")
 
 result = []
 keys = systems[0]
