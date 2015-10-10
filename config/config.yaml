@@ -6,8 +6,6 @@ station_field_maps:
     lng: longitude
     others:
       name: stationName
-      lat: latitude
-      lng: longitude
       addr: location
       city: city
       region: landMark
@@ -40,7 +38,7 @@ snapshot_field_maps:
       dockAva: availableDocks
       dockTot: totalDocks
       sts: statusValue
-  citybikenyc:
+  citibikenyc:
     container: stationBeanList
     id: id
     others:
@@ -56,3 +54,11 @@ snapshot_field_maps:
       dockAva: properties.docksAvailable
       dockTot: properties.totalDocks
       sts: properties.kioskPublicStatus
+
+station_status_maps:
+  babs:
+    In Service: In Service
+  citibikenyc:
+    In Service: In Service
+  indego:
+    In Service: Active
