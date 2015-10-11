@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+MAILTO=jamestyack
+#This is a comment
+*/10 * * * * cd /root/git/bike_share_jobs && ./snap_job.sh >> cron_test_out.txt
