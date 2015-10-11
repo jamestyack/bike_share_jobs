@@ -7,7 +7,7 @@ require 'rest_client'
 require 'dotenv'
 require 'pp'
 require 'yaml'
-require 'ruby/common_lib.rb'
+require "#{Dir.pwd}/lib/common_lib.rb"
 
 Dotenv.load
 if ARGV.empty? || ARGV.size != 1
@@ -15,7 +15,7 @@ if ARGV.empty? || ARGV.size != 1
   exit
 end
 system_id = ARGV[0]
-config = YAML::load(File.open('../config/config.yaml'))
+config = YAML::load(File.open('config/config.yaml'))
 @station_mapping = config['station_field_maps'][system_id]
 
 @client = Mongo::Client.new(ENV['MONGO_URL'])
