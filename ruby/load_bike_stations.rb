@@ -25,11 +25,13 @@ config = YAML::load(File.open('config/config.yaml'))
 #remove existing stations for this system_id
 @stations_coll.find({"_id.systemId" => system_id}).delete_many
 
+# store station with date in ID ... format 2015-10-28
 def convert_and_store(system_id, station)
   station_to_store = {}
   station_to_store["_id"] = {}
   station_to_store["_id"]["stationId"] = get_from_hash(@station_mapping["id"], station)
   station_to_store["_id"]["systemId"] = system_id
+  station_to_store["_id"]["date"] = Time.now.strftime("%Y-%m-%d")
   station_to_store["loc"] = {}
   station_to_store["loc"]["type"] = "Point"
   station_to_store["loc"]["coordinates"] = []
@@ -43,4 +45,4 @@ end
 
 stations_from_api = JSON.parse(RestClient.get @api_url)
 stations_list = stations_from_api[@station_mapping["container"]]
-stations_list.each { | station | convert_and_store(system_id, station) }
+stations_list.each { | station | convert_and_store(system_id, station, ) }
