@@ -1,3 +1,5 @@
+# configuration to map the bike share json to consistent stored data
+
 station_field_maps:
   babs:
     container: stationBeanList
