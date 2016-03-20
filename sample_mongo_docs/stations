@@ -1,0 +1,53 @@
+> db.stations.findOne({"_id.systemId":"citibikenyc"})
+{
+	"_id" : {
+		"stationId" : 3161,
+		"systemId" : "citibikenyc"
+	},
+	"ts" : ISODate("2015-09-19T05:45:02.981Z"),
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-73.977285325527,
+			40.780183972424
+		]
+	},
+	"name" : "Coming soon: W 76 St & Columbus Ave "
+}
+
+> db.stations.findOne({"_id.systemId":"babs"})
+{
+	"_id" : {
+		"stationId" : 38,
+		"systemId" : "babs"
+	},
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-122.1377775,
+			37.4256839
+		]
+	},
+	"name" : "Park at Olive",
+	"addr" : "",
+	"city" : "Palo Alto",
+	"region" : "Palo Alto"
+}
+
+> db.stations.findOne({"_id.systemId":"indego"})
+{
+	"_id" : {
+		"stationId" : 3006,
+		"systemId" : "indego"
+	},
+	"loc" : {
+		"type" : "Point",
+		"coordinates" : [
+			-75.20311,
+			39.9522
+		]
+	},
+	"name" : "40th & Spruce",
+	"addr" : "246 S. 40th St.",
+	"city" : "Philadelphia"
+}
