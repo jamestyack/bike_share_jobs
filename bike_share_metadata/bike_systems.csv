@@ -1,4 +1,4 @@
-_id,name,timezone,Location,api_url,map_center,zoom
-babs,Bay Area Bike Share,America/Los_Angeles,"Bay Area, CA",http://www.bayareabikeshare.com/stations/json,,
-indego,Indego,America/New_York,"Philadelphia, PA",http://www.rideindego.com/stations/json,,
-citibikenyc,Citybike NYC,America/New_York,"New York, NY",https://www.citibikenyc.com/stations/json,,
+_id,name,operator,website,timezone,Location,api_url,map_center,zoom
+babs,Bay Area Bike Share,Motivate,http://www.bayareabikeshare.com/,America/Los_Angeles,"San Francisco Bay Area, CA",http://www.bayareabikeshare.com/stations/json,37.48537|-122.203288,
+indego,Indego,Bicycle Transit Systems,http://www.rideindego.com,America/New_York,"Philadelphia, PA",http://www.rideindego.com/stations/json,39.95378|-75.16374,
+citibikenyc,Citybike NYC,Motivate,http://www.citibikenyc.com/,America/New_York,"New York, NY",https://www.citibikenyc.com/stations/json,40.72938685|-73.97772429,

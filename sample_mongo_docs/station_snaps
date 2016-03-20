@@ -1,0 +1,38 @@
+> db.station_snaps.findOne()
+{
+	"_id" : {
+		"stationId" : 22,
+		"systemId" : "babs",
+		"ts" : ISODate("2015-09-19T06:07:51.624Z")
+	},
+	"bikeAva" : 4,
+	"dockAva" : 23,
+	"dockTot" : 27,
+	"sts" : "In Service"
+}
+
+> db.station_snaps.findOne({"_id.systemId":"indego"})
+{
+	"_id" : {
+		"stationId" : 3004,
+		"systemId" : "indego",
+		"ts" : ISODate("2015-10-06T01:58:22.209Z")
+	},
+	"bikeAva" : 0,
+	"dockAva" : 25,
+	"dockTot" : 25,
+	"sts" : "Active"
+}
+
+> db.station_snaps.findOne({"_id.systemId":"citibikenyc"})
+{
+	"_id" : {
+		"stationId" : 72,
+		"systemId" : "citibikenyc",
+		"ts" : ISODate("2015-10-06T01:56:17.307Z")
+	},
+	"bikeAva" : 27,
+	"dockAva" : 9,
+	"dockTot" : 39,
+	"sts" : "In Service"
+}

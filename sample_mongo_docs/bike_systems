@@ -1,0 +1,10 @@
+> db.bike_systems.findOne()
+{
+	"_id" : "babs",
+	"name" : "Bay Area Bike Share",
+	"timezone" : "America/Los_Angeles",
+	"Location" : "Bay Area, CA",
+	"api_url" : "http://www.bayareabikeshare.com/stations/json",
+	"map_center" : null,
+	"zoom" : null
+}
